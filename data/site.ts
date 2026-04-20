@@ -1,10 +1,12 @@
+import type { Route } from "next";
+
 export const navigation = [
-  { href: "/", label: "Home" },
-  { href: "/rooms", label: "Rooms" },
-  { href: "/offers", label: "Offers" },
-  { href: "/gallery", label: "Gallery" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" }
+  { href: "/" as Route, label: "Home" },
+  { href: "/rooms" as Route, label: "Rooms" },
+  { href: "/offers" as Route, label: "Offers" },
+  { href: "/gallery" as Route, label: "Gallery" },
+  { href: "/about" as Route, label: "About" },
+  { href: "/contact" as Route, label: "Contact" }
 ] as const;
 
 export const rooms = [

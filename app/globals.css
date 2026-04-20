@@ -41,5 +41,6 @@ a {
 }
 
 .muted-copy {
-  @apply text-base leading-7 text-ink/72;
+  @apply text-base leading-7;
+  color: rgba(21, 37, 44, 0.72);
 }

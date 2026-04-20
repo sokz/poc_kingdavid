@@ -1,10 +1,11 @@
 import Link from "next/link";
+import type { Route } from "next";
 
 const adminLinks = [
-  { href: "/admin", label: "Overview" },
-  { href: "/admin/reservations", label: "Reservations" },
-  { href: "/admin/guests", label: "Guests" },
-  { href: "/admin/pricing", label: "Pricing" }
+  { href: "/admin" as Route, label: "Overview" },
+  { href: "/admin/reservations" as Route, label: "Reservations" },
+  { href: "/admin/guests" as Route, label: "Guests" },
+  { href: "/admin/pricing" as Route, label: "Pricing" }
 ];
 
 export default function AdminLayout({ children }: Readonly<{ children: React.ReactNode }>) {
